@@ -10,7 +10,8 @@
   --secondary-bg-color: #e5e5e5;
   --accent-bg-color: #2f303a;
   --border-color: #eeeeee;
-  --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1 px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1 px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --filter-btn-gap: 8px;
   --btn-radius: 4px;
 }
@@ -134,11 +135,6 @@ footer .logo {
   height: 80px;
   border-bottom: 1px solid #ececec;
 }
-/* .mail,
-.phone {
-  justify-content: flex-end;
-} */
-/*Section Hero*/
 .section-hero {
   background-color: var(--accent-bg-color);
   height: 600px;
@@ -146,7 +142,7 @@ footer .logo {
 }
 .hero-flexbox {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   text-align: center;
 }
 .container.hero-flexbox {
@@ -186,10 +182,10 @@ footer .logo {
 }
 .item {
   margin-top: 30px;
-  margin-left: 30px;
+  margin-right: 30px;
 }
 
-.section .advantages {
+.section.advantages {
   padding-bottom: 0px;
 }
 .flexbox {
@@ -197,7 +193,7 @@ footer .logo {
   flex-wrap: wrap;
 }
 .advantages-item {
-  flex-basis: calc((100%- 4 * 30px ) / 4);
+  flex-basis: calc((100% - 4 * 30px) / 4);
   text-align: start;
 }
 .advant-title {
@@ -218,28 +214,22 @@ footer .logo {
 .services-item {
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
-.services.img {
-  width: 370px;
-  height: 294px;
-}
-.team-item {
+.team-item,
+.content-box {
   flex-basis: calc((100% - 4 * 30px) / 4);
 }
 .team {
   background-color: var(--secondary-bg-color);
 }
 .team-item {
-  width: 270px;
-  height: 370;
   background-color: var(--white-text-color);
-  box-shadow: var(--box-shadow);
   border-radius: 0px 0px 4px 4px;
 }
 .team-text {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--card-shadow);
 }
 .services-title,
 .team-title {
@@ -255,7 +245,7 @@ footer .logo {
   width: 270px;
   height: 260px;
 }
-.team-names {  
+.team-names {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -269,6 +259,7 @@ footer .logo {
 }
 .filter-buttons {
   padding-bottom: 50px;
+  justify-content: center;
 }
 .filter-buttons .button {
   display: inline-block;
@@ -329,7 +320,6 @@ footer .logo {
   display: flex;
   flex-direction: column;
 }
-/* .content-box {} */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
