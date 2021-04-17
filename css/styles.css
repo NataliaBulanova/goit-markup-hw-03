@@ -328,7 +328,11 @@ footer .logo {
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
 }
+.footer .logo {
+  margin-bottom: 20px;
+}
 .contact {
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
