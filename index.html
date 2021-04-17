@@ -35,7 +35,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="list flexbox">
+        <ul class="list">
           <li class="conection">
             <a class="link mail" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -57,38 +57,40 @@
       </section>
       <!--Section Our advantages-->
       <section class="section advantages">
-        <div class="container flexbox">
+        <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="list card-set">
-            <li class="item advantages-item">
-              <h3 class="advant-title">Внимание к деталям</h3>
-              <p class="advant-text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li class="item advantages-item">
-              <h3 class="advant-title">Пунктуальность</h3>
-              <p class="advant-text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li class="item advantages-item">
-              <h3 class="advant-title">Планирование</h3>
-              <p class="advant-text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li class="item advantages-item">
-              <h3 class="advant-title">Современные технологии</h3>
-              <p class="advant-text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
-            </li>
-          </ul>
+          <div class="flexbox">
+            <ul class="list card-set">
+              <li class="item advantages-item">
+                <h3 class="advant-title">Внимание к деталям</h3>
+                <p class="advant-text">
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </li>
+              <li class="item advantages-item">
+                <h3 class="advant-title">Пунктуальность</h3>
+                <p class="advant-text">
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </p>
+              </li>
+              <li class="item advantages-item">
+                <h3 class="advant-title">Планирование</h3>
+                <p class="advant-text">
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </li>
+              <li class="item advantages-item">
+                <h3 class="advant-title">Современные технологии</h3>
+                <p class="advant-text">
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!--Section Services-->
@@ -138,7 +140,7 @@
                   alt="Ihor Demjanenko Product Designer"
                   width="810"
                 />
-                <div>
+                <div class="team-text">
                   <h3 class="team-names">Игорь Демьяненко</h3>
                   <p class="team-positions">Product Designer</p>
                 </div>
@@ -150,7 +152,7 @@
                   alt="Olga Repina Frontend Developer"
                   width="810"
                 />
-                <div>
+                <div class="team-text">
                   <h3 class="team-names">Ольга Репина</h3>
                   <p class="team-positions">Frontend Developer</p>
                 </div>
@@ -162,7 +164,7 @@
                   alt="Nikolaj Tarasov Marketing"
                   width="810"
                 />
-                <div>
+                <div class="team-text">
                   <h3 class="team-names">Николай Тарасов</h3>
                   <p class="team-positions">Marketing</p>
                 </div>
@@ -174,7 +176,7 @@
                   alt="Mikhail Yermakov UI Designer"
                   width="810"
                 />
-                <div>
+                <div class="team-text">
                   <h3 class="team-names">Михаил Ермаков</h3>
                   <p class="team-positions">UI Designer</p>
                 </div>
@@ -184,25 +186,27 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="logo"
-          ><span class="logo-part">Web</span>Studio</a
-        >
-        <address class="contacts">
-          <ul class="list">
-            <li class="contact">г. Киев, пр-т Леси Украинки, 26</li>
-            <li>
-              <a class="link contact" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li>
-              <a class="link contact" href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+      <div class="container footer-flexbox">
+        <div class="content-box">
+          <a href="./index.html" class="logo"
+            ><span class="logo-part">Web</span>Studio</a
+          >
+          <address class="contacts">
+            <ul class="list footer-flexbox">
+              <li class="contact">г. Киев, пр-т Леси Украинки, 26</li>
+              <li>
+                <a class="link contact" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a class="link contact" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </footer>
   </body>
